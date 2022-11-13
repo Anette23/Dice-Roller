@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dice Roller game with HTML, CSS and JavaScript, Author: Aneta Krajcovicova">
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- <script src="./app.js" defer></script> -->
+    <script type="module" src="app.js"></script>
+    <script nomodule src="app.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <section class="playground">
+                <header>
+                    <h1 class="animate__animated animate__pulse animate__delay-1s animate__repeat-3">Dice Roller
+                    </h1>
+
+                    <button id="open-modal">Instructions
+                    </button>
+                    <div id="modal-overlay">
+                        <div id="modal">
+                            <div class="modal-header">
+                                <h2>How to play dice roller?</h2>
+                            </div>
+                            <div class="modal-content">
+                                <ol start="1" type="1">
+                                    <li> Click the Roll Dice button
+                                    </li>
+                                    <li>When you get number 1, your score will be deleted and next player will play.
+                                    </li>
+                                    <li>You can clik Hold Score button</li>
+                                    <li>Hold Score button holds your score and next player can play</li>
+                                    <li>When you click on New Game button, the new game will start</li>
+                                </ol>
+                                <p>GOOD LUCK! 🧡</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="close-modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="total">
+                    <div class="totalScore totalScore0 active">
+                        <p id="name-0"></p>
+                        <p id="totalScorePlayer-0"></p>
+                    </div>
+                    <div class="totalScore totalScore1">
+                        <p id="name-1"></p>
+                        <p id="totalScorePlayer-1"></p>
+                    </div>
+                </div>
+
+                <div class="score">
+                    <div class="currentScore currentScore0">
+                        <p>Current score</p>
+                        <p id="currentScore-0"></p>
+                    </div>
+                    <div class="currentScore currentScore1">
+                        <p>Current score</p>
+                        <p id="currentScore-1"></p>
+                    </div>
+                </div>
+
+                <div class="dice">
+                    <img src="./img/1.jpg" class="diceImage" alt="picture of dice">
+                </div>
+
+                <div class="middle">
+                    <div class="middleText">
+                        <p class="btn btn-rollDice">Roll Dice</p>
+                        <p class="btn btn-holdScore">Hold Score</p>
+                        <p class="btn btn-newGame">New Game</p>
+                    </div>
+                </div>
+
+
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
