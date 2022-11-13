@@ -31,8 +31,6 @@ const start = () => {
 
     document.querySelector('.totalScore0').classList.add('active')
     document.querySelector('.totalScore1').classList.remove('active')
-
-
 }
 
 start()
@@ -99,12 +97,7 @@ const nextPlayer = () => {
 
     document.querySelector('.totalScore0').classList.toggle('active')
     document.querySelector('.totalScore1').classList.toggle('active')
-    
-
-    // document.querySelector('.diceImage').style.display = 'none'
-    
-
-}
+   }
 
 
 // HOLD SCORE
@@ -123,11 +116,9 @@ holdScore.addEventListener('click', () => {
             playGame = false
         } else {
             nextPlayer()
-            
-        }
+         }
     }
-    
-})
+   })
 
 
 // NEW GAME FUNCTION
@@ -135,21 +126,6 @@ const newGameBtn = document.querySelector('.btn-newGame')
 newGameBtn.addEventListener('click', () => {
 start()
 location.reload()
-
 })
 
 
-// let p = new Promise((resolve,reject) => {
-//     let a = 1 + 1
-//     if(a == 2) {
-//         resolve('Success')
-//     } else {
-//         reject('Failed')
-//     }
-// })
-
-// p.then((message) => {
-//     console.log('This is in the then ' + message)
-// }).catch((message) => {
-//     console.log('This is in the catch ' + message)
-// })
